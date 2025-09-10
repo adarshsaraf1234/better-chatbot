@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . . 
 
-# Install pnpm
+# Install pnpm b
 RUN corepack enable pnpm
 
 RUN pnpm install --frozen-lockfile
