@@ -1,13 +1,13 @@
 "use client";
 import {
-  SidebarMenuAction,
+  // SidebarMenuAction,
   SidebarMenuButton,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
+  // SidebarMenuSub,
+  // SidebarMenuSubButton,
+  // SidebarMenuSubItem,
   useSidebar,
 } from "ui/sidebar";
-import { Tooltip, TooltipContent, TooltipTrigger } from "ui/tooltip";
+import { Tooltip } from "ui/tooltip";
 import { SidebarMenu, SidebarMenuItem } from "ui/sidebar";
 import { SidebarGroupContent } from "ui/sidebar";
 
@@ -18,28 +18,28 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { MCPIcon } from "ui/mcp-icon";
 import { WriteIcon } from "ui/write-icon";
-import {
-  FolderOpenIcon,
-  FolderSearchIcon,
-  PlusIcon,
-  Waypoints,
-} from "lucide-react";
-import { useCallback, useState } from "react";
-import { Skeleton } from "ui/skeleton";
-import { useArchives } from "@/hooks/queries/use-archives";
-import { ArchiveDialog } from "../archive-dialog";
+// import {
+//   FolderOpenIcon,
+//   FolderSearchIcon,
+//   PlusIcon,
+//   // Waypoints,
+// } from "lucide-react";
+// import { useCallback, useState } from "react";
+// import { Skeleton } from "ui/skeleton";
+// import { useArchives } from "@/hooks/queries/use-archives";
+// import { ArchiveDialog } from "../archive-dialog";
 
 export function AppSidebarMenus() {
   const router = useRouter();
   const t = useTranslations("");
   const { setOpenMobile } = useSidebar();
-  const [expandedArchive, setExpandedArchive] = useState(false);
-  const [addArchiveDialogOpen, setAddArchiveDialogOpen] = useState(false);
+  // const [/*expandedArchive*/, setExpandedArchive] = useState(false);
+  // const [addArchiveDialogOpen, setAddArchiveDialogOpen] = useState(false);
 
-  const { data: archives, isLoading: isLoadingArchives } = useArchives();
-  const toggleArchive = useCallback(() => {
-    setExpandedArchive((prev) => !prev);
-  }, []);
+  // const { data: archives, isLoading: isLoadingArchives } = useArchives();
+  // const toggleArchive = useCallback(() => {
+  //   setExpandedArchive((prev) => !prev);
+  // }, []);
 
   return (
     <SidebarGroup>
@@ -86,19 +86,19 @@ export function AppSidebarMenus() {
             </SidebarMenuItem>
           </Tooltip>
         </SidebarMenu>
-        <SidebarMenu>
+        {/* <SidebarMenu>
           <Tooltip>
-            <SidebarMenuItem>
+            { <SidebarMenuItem>
               <Link href="/workflow">
                 <SidebarMenuButton className="font-semibold">
                   <Waypoints className="size-4" />
                   {t("Layout.workflow")}
                 </SidebarMenuButton>
               </Link>
-            </SidebarMenuItem>
+            </SidebarMenuItem> }
           </Tooltip>
-        </SidebarMenu>
-        <SidebarMenu className="group/archive">
+        </SidebarMenu> */}
+        {/* <SidebarMenu className="group/archive">
           <Tooltip>
             <SidebarMenuItem>
               <SidebarMenuButton
@@ -160,12 +160,12 @@ export function AppSidebarMenus() {
               </SidebarMenuSub>
             </>
           )}
-        </SidebarMenu>
+        </SidebarMenu> */}
       </SidebarGroupContent>
-      <ArchiveDialog
+      {/* <ArchiveDialog
         open={addArchiveDialogOpen}
         onOpenChange={setAddArchiveDialogOpen}
-      />
+      /> */}
     </SidebarGroup>
   );
 }

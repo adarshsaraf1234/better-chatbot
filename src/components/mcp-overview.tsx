@@ -4,16 +4,16 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { MCPIcon } from "ui/mcp-icon";
 
-import { NotionIcon } from "ui/notion-icon";
-import { LinearIcon } from "ui/linear-icon";
-import { PlaywrightIcon } from "ui/playwright-icon";
-import { NeonIcon } from "ui/neon-icon";
-import { StripeIcon } from "ui/stripe-icon";
-import { CanvaIcon } from "ui/canva-icon";
-import { PaypalIcon } from "ui/paypal-icon";
+// import { NotionIcon } from "ui/notion-icon";
+// import { LinearIcon } from "ui/linear-icon";
+// import { PlaywrightIcon } from "ui/playwright-icon";
+// import { NeonIcon } from "ui/neon-icon";
+// import { StripeIcon } from "ui/stripe-icon";
+// import { CanvaIcon } from "ui/canva-icon";
+// import { PaypalIcon } from "ui/paypal-icon";
 import { Button } from "ui/button";
-import { AtlassianIcon } from "ui/atlassian-icon";
-import { AsanaIcon } from "ui/asana-icon";
+// import { AtlassianIcon } from "ui/atlassian-icon";
+// import { AsanaIcon } from "ui/asana-icon";
 import { GithubIcon } from "ui/github-icon";
 
 export const RECOMMENDED_MCPS = [
@@ -28,80 +28,80 @@ export const RECOMMENDED_MCPS = [
     },
     icon: GithubIcon,
   },
-  {
-    name: "notion",
-    label: "Notion",
-    config: {
-      url: "https://mcp.notion.com/mcp",
-    },
-    icon: NotionIcon,
-  },
+  // {
+  //   name: "notion",
+  //   label: "Notion",
+  //   config: {
+  //     url: "https://mcp.notion.com/mcp",
+  //   },
+  //   icon: NotionIcon,
+  // },
 
-  {
-    name: "linear",
-    label: "Linear",
-    config: {
-      url: "https://mcp.linear.app/sse",
-    },
-    icon: LinearIcon,
-  },
-  {
-    name: "playwright",
-    label: "Playwright",
-    config: {
-      command: "npx",
-      args: ["@playwright/mcp@latest"],
-    },
-    icon: PlaywrightIcon,
-  },
-  {
-    name: "neon",
-    label: "Neon",
-    config: {
-      url: "https://mcp.neon.tech/mcp",
-    },
-    icon: NeonIcon,
-  },
-  {
-    name: "paypal",
-    label: "Paypal",
-    config: {
-      url: "https://mcp.paypal.com/mcp",
-    },
-    icon: PaypalIcon,
-  },
-  {
-    name: "stripe",
-    label: "Stripe",
-    config: {
-      url: "https://mcp.stripe.com",
-    },
-    icon: StripeIcon,
-  },
-  {
-    name: "canva",
-    label: "Canva",
-    config: {
-      url: "https://mcp.canva.com/mcp",
-    },
-    icon: CanvaIcon,
-  },
-  {
-    name: "atlassian",
-    label: "Atlassian",
-    icon: AtlassianIcon,
-    config: {
-      url: "https://mcp.atlassian.com/v1/sse",
-    },
-  },
-  {
-    name: "asana",
-    label: "Asana",
-    icon: AsanaIcon,
-    config: {
-      url: "https://mcp.asana.com/sse",
-    },
-  },
+  // {
+  //   name: "linear",
+  //   label: "Linear",
+  //   config: {
+  //     url: "https://mcp.linear.app/sse",
+  //   },
+  //   icon: LinearIcon,
+  // },
+  // {
+  //   name: "playwright",
+  //   label: "Playwright",
+  //   config: {
+  //     command: "npx",
+  //     args: ["@playwright/mcp@latest"],
+  //   },
+  //   icon: PlaywrightIcon,
+  // },
+  // {
+  //   name: "neon",
+  //   label: "Neon",
+  //   config: {
+  //     url: "https://mcp.neon.tech/mcp",
+  //   },
+  //   icon: NeonIcon,
+  // },
+  // {
+  //   name: "paypal",
+  //   label: "Paypal",
+  //   config: {
+  //     url: "https://mcp.paypal.com/mcp",
+  //   },
+  //   icon: PaypalIcon,
+  // },
+  // {
+  //   name: "stripe",
+  //   label: "Stripe",
+  //   config: {
+  //     url: "https://mcp.stripe.com",
+  //   },
+  //   icon: StripeIcon,
+  // },
+  // {
+  //   name: "canva",
+  //   label: "Canva",
+  //   config: {
+  //     url: "https://mcp.canva.com/mcp",
+  //   },
+  //   icon: CanvaIcon,
+  // },
+  // {
+  //   name: "atlassian",
+  //   label: "Atlassian",
+  //   icon: AtlassianIcon,
+  //   config: {
+  //     url: "https://mcp.atlassian.com/v1/sse",
+  //   },
+  // },
+  // {
+  //   name: "asana",
+  //   label: "Asana",
+  //   icon: AsanaIcon,
+  //   config: {
+  //     url: "https://mcp.asana.com/sse",
+  //   },
+  // },
 ];
 
 export function MCPOverview() {

@@ -14,7 +14,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 import { AppSidebarMenus } from "./app-sidebar-menus";
-import { AppSidebarAgents } from "./app-sidebar-agents";
+// import { AppSidebarAgents } from "./app-sidebar-agents";
 import { AppSidebarThreads } from "./app-sidebar-threads";
 
 import { isShortcutEvent, Shortcuts } from "lib/keyboard-shortcuts";
@@ -72,7 +72,7 @@ export function AppSidebar({
                   router.refresh();
                 }}
               >
-                <h4 className="font-bold">better-chatbot</h4>
+                <h4 className="font-bold">K-Net Chatbot</h4>
                 <div
                   className="ml-auto block sm:hidden"
                   onClick={(e) => {
@@ -92,7 +92,7 @@ export function AppSidebar({
       <SidebarContent className="mt-2 overflow-hidden relative">
         <div className="flex flex-col overflow-y-auto">
           <AppSidebarMenus />
-          <AppSidebarAgents />
+          {/* <AppSidebarAgents /> */}
           <AppSidebarThreads />
         </div>
       </SidebarContent>
