@@ -1,28 +1,7 @@
-<img width="1184" height="576" alt="thumbnail" loading="lazy" src="https://github.com/user-attachments/assets/d6ba80ff-a62a-4920-b266-85c4a89d6076" />
 
 
-[![MCP Supported](https://img.shields.io/badge/MCP-Supported-00c853)](https://modelcontextprotocol.io/introduction)
-[![Local First](https://img.shields.io/badge/Local-First-blue)](https://localfirstweb.dev/)
-[![Discord](https://img.shields.io/discord/1374047276074537103?label=Discord&logo=discord&color=5865F2)](https://discord.gg/gCRu69Upnp)
 
-[![Deploy with Vercel](https://vercel.com/button)](<https://vercel.com/new/clone?repository-url=https://github.com/cgoinglove/better-chatbot&env=BETTER_AUTH_SECRET&env=OPENAI_API_KEY&env=GOOGLE_GENERATIVE_AI_API_KEY&env=ANTHROPIC_API_KEY&envDescription=BETTER_AUTH_SECRET+is+required+(enter+any+secret+value).+At+least+one+LLM+provider+API+key+(OpenAI,+Claude,+or+Google)+is+required,+but+you+can+add+all+of+them.+See+the+link+below+for+details.&envLink=https://github.com/cgoinglove/better-chatbot/blob/main/.env.example&demo-title=better-chatbot&demo-description=An+Open-Source+Chatbot+Template+Built+With+Next.js+and+the+AI+SDK+by+Vercel.&products=[{"type":"integration","protocol":"storage","productSlug":"neon","integrationSlug":"neon"},{"type":"integration","protocol":"storage","productSlug":"upstash-kv","integrationSlug":"upstash"}]>)
-
-🚀 **[Live Demo](https://better-chatbot-demo.vercel.app/)** | See the experience in action in the [preview](#preview) below!
-
-**Better Chatbot** - A better open-source AI chatbot for individuals and teams, inspired by ChatGPT, Claude, Grok, and Gemini.
-
-• **Multi-AI Support** - Integrates all major LLMs: OpenAI, Anthropic, Google, xAI, Ollama, and more  
-• **Powerful Tools** - MCP protocol, web search, JS/Python code execution, data visualization  
-• **Automation** - Custom agents, visual workflows, artifact generation  
-• **Collaboration** - Share agents, workflows, and MCP configurations with your team  
-• **Voice Assistant** - Realtime voice chat with full MCP tool integration  
-• **Intuitive UX** - Instantly invoke any feature with `@mention`  
-• **Quick Start** - Deploy free with Vercel Deploy button  
-
-Built with Vercel AI SDK and Next.js, combining the best features of leading AI services into one platform.
-
-
-### Quick Start 🚀
+### Quick Start 
 
 ```bash
 # 1. Clone the repository
@@ -59,39 +38,6 @@ pnpm build:local && pnpm start
 # pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to get started.
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Preview](#preview)
-  - [🧩 Browser Automation with Playwright MCP](#-browser-automation-with-playwright-mcp)
-  - [🔗 Visual Workflows as Custom Tools](#-visual-workflows-as-custom-tools)
-  - [🤖 Custom Agents](#-custom-agents)
-  - [🎙️ Realtime Voice Assistant + MCP Tools](#️-realtime-voice-assistant--mcp-tools)
-  - [⚡️ Quick Tool Mentions (`@`) \& Presets](#️-quick-tool-mentions---presets)
-  - [🧭 Tool Choice Mode](#-tool-choice-mode)
-  - [🛠️ Default Tools](#️-default-tools)
-    - [🌐 Web Search](#-web-search)
-    - [⚡️ JS,PYTHON Executor](#️-jspython-executor)
-    - [📊 Data Visualization Tools](#-data-visualization-tools)
-- [Getting Started](#getting-started)
-  - [Quick Start (Docker Compose Version) 🐳](#quick-start-docker-compose-version-)
-  - [Quick Start (Local Version) 🚀](#quick-start-local-version-)
-  - [Environment Variables](#environment-variables)
-- [📘 Guides](#-guides)
-    - [🔌 MCP Server Setup \& Tool Testing](#-mcp-server-setup--tool-testing)
-    - [🐳 Docker Hosting Guide](#-docker-hosting-guide)
-    - [▲ Vercel Hosting Guide](#-vercel-hosting-guide)
-    - [🎯 System Prompts \& Chat Customization](#-system-prompts--chat-customization)
-    - [🔐 OAuth Sign-In Setup](#-oauth-sign-in-setup)
-    - [🕵🏿 Adding openAI like providers](#-adding-openai-like-providers)
-    - [🧪 E2E Testing Guide](#-e2e-testing-guide)
-- [💡 Tips](#-tips)
-    - [💬 Temporary Chat Windows](#-temporary-chat-windows)
-- [🗺️ Roadmap](#️-roadmap)
-- [🙌 Contributing](#-contributing)
-- [💬 Join Our Discord](#-join-our-discord)
 
 > This project is evolving at lightning speed! ⚡️ We're constantly shipping new features and smashing bugs. **Star this repo** to join the ride and stay in the loop with the latest updates!
 
@@ -135,33 +81,8 @@ Sample prompt:
 - Publish workflows to make them available as `@workflow_name` tools in chat
 - Chain complex multi-step processes into reusable, automated sequences
 
-<br/>
 
-### 🤖 Custom Agents
 
-<img width="1567" alt="agent-example" loading="lazy" src="https://github.com/user-attachments/assets/d0a325c0-ff1e-4038-b6bf-fcf57659a5c1" />
-
-**Example:** Create specialized AI agents with custom instructions and tool access.
-
-- Define custom agents with specific system prompts and available tools
-- Easily invoke agents in chat using `@agent_name` 
-- Build task-specific assistants like a GitHub Manager agent with issue/PR tools and project context
-
-For instance, create a GitHub Manager agent by:
-- Providing GitHub tools (issue/PR creation, comments, queries)
-- Adding project details to the system prompt
-- Calling it with `@github_manager` to manage your repository
-
-<br/>
-
-### 🎙️ Realtime Voice Assistant + MCP Tools
-
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/e2657b8c-ce0b-40dd-80b6-755324024973" width="100%" />
-</p>
-
-This demo showcases a **realtime voice-based chatbot assistant** built with OpenAI's new Realtime API — now extended with full **MCP tool integration**.
-Talk to the assistant naturally, and watch it execute tools in real time.
 
 ### ⚡️ Quick Tool Mentions (`@`) & Presets
 
@@ -349,35 +270,7 @@ NOT_ALLOW_ADD_MCP_SERVERS=
 
 <br/>
 
-## 📘 Guides
 
-Step-by-step setup guides for running and configuring better-chatbot.
-
-#### [🔌 MCP Server Setup & Tool Testing](./docs/tips-guides/mcp-server-setup-and-tool-testing.md)
-
-- How to add and configure MCP servers in your environment
-
-#### [🐳 Docker Hosting Guide](./docs/tips-guides/docker.md)
-
-- How to self-host the chatbot using Docker, including environment configuration.
-
-#### [▲ Vercel Hosting Guide](./docs/tips-guides/vercel.md)
-
-- Deploy the chatbot to Vercel with simple setup steps for production use.
-
-#### [🎯 System Prompts & Chat Customization](./docs/tips-guides/system-prompts-and-customization.md)
-
-- Personalize your chatbot experience with custom system prompts, user preferences, and MCP tool instructions
-
-#### [🔐 OAuth Sign-In Setup](./docs/tips-guides/oauth.md)
-
-- Configure Google, GitHub, and Microsoft OAuth for secure user login support.
-
-#### [🕵🏿 Adding openAI like providers](docs/tips-guides/adding-openAI-like-providers.md)
-
-- Adding openAI like ai providers
-
-#### [🧪 E2E Testing Guide](./docs/tips-guides/e2e-testing-guide.md)
 
 - Comprehensive end-to-end testing with Playwright including multi-user scenarios, agent visibility testing, and CI/CD integration
   <br/>
@@ -392,27 +285,4 @@ Step-by-step setup guides for running and configuring better-chatbot.
 
 Planned features coming soon to better-chatbot:
 
-- [ ] **File Attach & Image Generation**
-- [ ] **Collaborative Document Editing** (like OpenAI Canvas: user & assistant co-editing)
-- [ ] **RAG (Retrieval-Augmented Generation)**
-- [ ] **Web-based Compute** (with [WebContainers](https://webcontainers.io) integration)
 
-💡 If you have suggestions or need specific features, please create an [issue](https://github.com/cgoinglove/better-chatbot/issues)!
-
-## 🙌 Contributing
-
-We welcome all contributions! Bug reports, feature ideas, code improvements — everything helps us build the best local AI assistant.
-
-> **⚠️ Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting any Pull Requests or Issues.** This helps us work together more effectively and saves time for everyone.
-
-**For detailed contribution guidelines**, please see our [Contributing Guide](./CONTRIBUTING.md).
-
-**Language Translations:** Help us make the chatbot accessible to more users by adding new language translations. See [language.md](./messages/language.md) for instructions on how to contribute translations.
-
-Let's build it together 🚀
-
-## 💬 Join Our Discord
-
-[![Discord](https://img.shields.io/discord/1374047276074537103?label=Discord&logo=discord&color=5865F2)](https://discord.gg/gCRu69Upnp)
-
-Connect with the community, ask questions, and get support on our official Discord server!
