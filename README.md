@@ -1,12 +1,11 @@
+### Quick Start
 
-
-
-### Quick Start 
+A K-NET Chatbot + Agent based on Vercel's AI-sdk and MCP.
 
 ```bash
 # 1. Clone the repository
 
-git clone https://github.com/cgoinglove/better-chatbot.git
+git clone https://github.com/adarshsaraf1234/better-chatbot.git
 cd better-chatbot
 
 # 2. (Optional) Install pnpm if you don't have it
@@ -37,17 +36,6 @@ pnpm build:local && pnpm start
 # For development mode with hot-reloading and debugging, you can use:
 # pnpm dev
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ## Getting Started
 
@@ -166,7 +154,8 @@ NOT_ALLOW_ADD_MCP_SERVERS=
 
 <br/>
 
+## Notes:
 
-
-
-
+1. Only One LLM provider is needed.
+2. GPT-OSS:120B is the LLM used for this Chatbot, setup from AWS Bedrock using the script [here](scripts/init-openai-compatiable.ts)
+3. For more details, take a look at the Project Demo [Video](https://youtu.be/2UHsky0K77U) and [Submission](https://devpost.com/software/k-net-an-mcp-powered-agent-network-of-knowledge-bases).
