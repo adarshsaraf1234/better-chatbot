@@ -1,18 +1,21 @@
+# docker/Dockerfile — updated to enable pnpm reliably via corepack
 FROM node:23-alpine AS builder
 ARG DOCKER_BUILD="1"
 WORKDIR /app
 
 COPY . . 
 
-# Install pnpm b
-RUN corepack enable pnpm
+# Enable corepack and prepare pnpm (ensures pnpm binary is available)
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
+# Install dependencies using pnpm (honor lockfile)
 RUN pnpm install --frozen-lockfile
 
 # Makes the next output standalone
 # https://github.com/vercel/next.js/discussions/65511
 ENV NEXT_STANDALONE_OUTPUT="true"
 
+# Build the Next app
 RUN pnpm build
 
 FROM node:23-alpine AS runner
