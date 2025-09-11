@@ -1,13 +1,8 @@
 version: 1.0
 
-# Build uses your Dockerfile present in this source directory
 build:
-  # If your Dockerfile is named differently, replace "Dockerfile" with that name
-  dockerfile: Dockerfile
+  dockerfile: docker/Dockerfile
 
-# Runtime: optional, App Runner will use the image built by Dockerfile
 run:
-  # port your container listens on
   port: 3000
-  # optionally you can specify the command to run (if Dockerfile CMD is enough you can omit)
-  # command: ["npm", "run", "start"]
+  command: ["npx", "next", "start", "-p", "3000", "-H", "0.0.0.0"]
