@@ -2,12 +2,12 @@ version: 1.0
 runtime: docker
 
 build:
-  dockerfile: docker/Dockerfile   # explicitly point to Dockerfile inside docker/
-  context: .                      # build context is repo root (so it sees package.json etc.)
+  context: .
+  dockerfile: docker/Dockerfile
 
 run:
-  port: 3000
   command: ["npx", "next", "start", "-p", "3000", "-H", "0.0.0.0"]
+  port: 3000
   env:
     HOSTNAME: "0.0.0.0"
     PORT: "3000"
