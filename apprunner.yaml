@@ -1,0 +1,16 @@
+version: 1.0
+runtime: docker
+
+build:
+  dockerfile: docker/Dockerfile   # explicitly point to Dockerfile inside docker/
+  context: .                      # build context is repo root (so it sees package.json etc.)
+
+run:
+  port: 3000
+  command: ["npx", "next", "start", "-p", "3000", "-H", "0.0.0.0"]
+  env:
+    HOSTNAME: "0.0.0.0"
+    PORT: "3000"
+  secrets:
+    - name: "DATABASE_URL"
+      valueFrom: "arn:aws:secretsmanager:us-east-1:529088258243:secret:better-chatbot/prod/db"
